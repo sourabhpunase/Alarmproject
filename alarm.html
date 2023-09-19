@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Alarm-Clock</title>
+    <link rel="stylesheet" href="alarm.css">
+
+</head>
+<body>
+
+    
+    
+    <div class="quote">
+    <h1>  Time is free but <br>it is priceless  </h1></div>
+    <div id="container">
+        <div id="clock">
+            <div class="time">
+                <p id="hr">00</p>
+            </div>
+            
+            <div class="dots">:</div>
+            
+            <div class="time">
+                <p id="min">00</p>
+            </div>
+
+            <div class="dots">:</div>
+
+            <div class="time">
+                <p id="sec">00</p>
+            </div>
+            &nbsp; &nbsp;
+            <div class="time lastp">
+                <p id="ampm">AM</p>
+            </div>
+        </div>
+
+        <div id="setting-div">
+            <h2> Set Your Alarm</h2>
+            <div id="alarmset">
+                <!-- <input type="time"> -->
+                <select name="hours" id="hours" required>
+                    <option value="">h</option>
+                </select>
+
+                <select name="minutes"
+                id="minutes" required>
+                <option value="">m</option>
+                </select>
+
+                <select name="seconds"
+                id="seconds" required>
+                <option value="">s</option>
+                </select>
+
+                <select name="ampm" id="ampmss" required>
+                    <option value="">a/p</option>
+                    <option value="AM">AM</option>
+                    <option value="PM">PM</option>
+                </select>
+            </div>
+            <div id="snooze-container">
+            <div id="setalarm-btn">Set Alarm</div>
+            <div id="snooze"><button>Snooze</button></div>
+        </div>
+            
+        
+            
+        </div>
+
+        <div ><h2>Upcoming Alarms</h2></div>
+        
+        <div id="alarm-container">
+
+        </div>
+
+    </div>
+
+
+    <script src="alarm.js"></script>
+    
+</body>
+</html>
